@@ -18,11 +18,6 @@ from django.urls import path
 from django.http import HttpResponse
 from recipes.views import home, contact, about
 
-
-def _home(request):
-    return HttpResponse("HOME")
-
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home),
